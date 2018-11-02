@@ -1,3 +1,4 @@
-# Helloword
-Assignment 1
-I want to have lunch earlier.about 12pm
+Hi everyone,
+
+   Here is the README file for this light bulb project.
+
