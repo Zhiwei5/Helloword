@@ -32,7 +32,7 @@
      
      set_pwm_based_on_operating_mode();
 
-     shine_led();
+     //shine_led();
      button_pushed = FALSE;
  }
 
@@ -41,16 +41,16 @@
      switch (operating_mode) {
          case 0:
              PWM_OUT = 0;
-             analogWrite(LedPin, PWM_OUT);
+             digitalgWrite(LedPin, PWM_OUT);
          case 1:
              PWM_OUT = PWM_MAX;
-             analogWrite(LedPin, PWM_OUT);
+             digitalgWrite(LedPin, PWM_OUT);
          case 2:
              PWN_OUT = int(PWM_MAX/2);
-             analogWrite(LedPin, PWM_OUT);
+             digitalgWrite(LedPin, PWM_OUT);
          case 3:
              PWN_OUT = int(PWM_MAX/4);
-             analogWrite(LedPin, PWM_OUT);
+             digitalgWrite(LedPin, PWM_OUT);
          case 4:
              flash_the_light();
      }
